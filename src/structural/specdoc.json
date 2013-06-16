@@ -26,7 +26,7 @@
             ]
         }, 
         {
-            "constraint": "A doc is said to conform to this spec iff there exists no included specdoc.json that contains a constraint which is violated by the doc."
+            "constraint": "A doc is said to conform to this spec iff there exists no included specdoc that contains a constraint which is violated by the doc."
         }, 
         {
             "constraint": "Every included specdoc is itself a doc which conforms to the spec referred to in the spec property"
