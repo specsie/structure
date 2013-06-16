@@ -1,4 +1,4 @@
-Structure
-==========
+specsy structure
+================
 
-The introduce inheritance into the specsy meta-spec design system
+This spec build directly on the foundation. It introduces inheritance into the specsy meta-spec design system
