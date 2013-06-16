@@ -7,7 +7,7 @@
     "includes": [
         "/src/structural/specdoc.json"
     ], 
-    "spec": "path_to_foundation_spec", 
+    "spec": "https://github.com/specsy/structure.git", 
     "constraints": [
         {
             "constraint": "A qualifier constraint MAY constrain another constraint in this spec.", 
