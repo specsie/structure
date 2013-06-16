@@ -1,0 +1,38 @@
+{
+    "json-schema": [
+        "/src/schema.json"
+    ], 
+    "inherits": {
+    }, 
+    "includes": [
+        "/src/structural/specdoc.json"
+    ], 
+    "spec": "path_to_foundation_spec", 
+    "constraints": [
+        {
+            "constraint": "A qualifier constraint MAY constrain another constraint in this spec.", 
+            "qualifiers": [
+                {
+                    "constraint": "A qualifier MUST qualify the constraint that is its parent only."
+                }
+            ]
+        }, 
+        {
+            "constraint": "Every spec that inherits from this spec aggregates all of this spec's structural specdoc's properties and property values, including any properties this spec has inherited.", 
+            "qualifiers": [
+                {
+                    "constraint": "Inherited contraints MUST NOT be qualified in this spec."
+                }
+            ]
+        }, 
+        {
+            "constraint": "A doc is said to conform to this spec iff there exists no included specdoc.json that contains a constraint which is violated by the doc."
+        }, 
+        {
+            "constraint": "Every included specdoc is itself a doc which conforms to the spec referred to in the spec property"
+        }
+    ], 
+    "description": [
+        ""
+    ]
+}

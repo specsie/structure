@@ -1,0 +1,3 @@
+This document asserts that the foundational spec does not conform to itself. 
+That assertion is inconsistent with one or more of the foundational spec's laws.
+Therefore, this document does not conform to the foundational spec.

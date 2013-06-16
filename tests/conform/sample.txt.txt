@@ -1,0 +1,3 @@
+This document asserts that 0 is equal to 1. 
+That assertion is incorrect, yet it violates none of the foundational spec's laws. 
+Therefore, this document conforms to the foundational spec.
