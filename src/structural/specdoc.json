@@ -1,30 +1,27 @@
 {
     "json-schema": [
-        "/src/schema.json"
+        "https://raw.github.com/specsie/foundation/master/schema.json"
     ], 
-    "inherits": {
+    "specdoc": {
+        "spec": "https://github.com/specsie/structure.git"
     }, 
+    "inherits": [
+        {
+            "spec": "https://github.com/specsie/foundation.git"
+        },
+        {
+            "spec": "https://github.com/specsie/construction.git"
+        },
+        {
+            "spec": "https://github.com/specsie/blueprint.git"
+        }
+    ], 
     "includes": [
         "/src/structural/specdoc.json"
     ], 
-    "spec": "https://github.com/specsy/structure.git", 
     "constraints": [
         {
-            "constraint": "A qualifier constraint MAY constrain another constraint in this spec.", 
-            "qualifiers": [
-                {
-                    "constraint": "A qualifier MAY NOT qualify a constraint outside its immediate scope."
-                }
-            ]
-        }, 
-        {
-            "constraint": "The build of every spec that inherits this spec MUST aggregate all of this spec's structural properties and values, including inherited properties.", 
-        }, 
-        {
-            "constraint": "A doc which conforms to this spec MUST NOT violate any constraint in this spec's build."
-        }, 
-        {
-            "constraint": "Every included specdoc is itself a doc which MUST conform to the spec in this spec's spec property"
+            "constraint": "The build of every spec that inherits this spec MUST aggregate all of this spec's structural property:values and all this spec's inherited structural property:values recursively."
         }
     ], 
     "description": [

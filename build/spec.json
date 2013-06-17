@@ -1,0 +1,22 @@
+{
+    "build": {
+        "status": "OK", 
+        "datetime": 1371343811, 
+        "baseline": "2570cfa1cdd97fbd553b406eeed442f565a37a16"
+    }, 
+    "json-schema": [
+        "https://raw.github.com/specsie/build/master/schema.json"
+    ], 
+    "inherits": [
+        {
+            "spec": "https://github.com/specsie/structure.git", 
+            "inherits": [
+                {
+                    "spec": "https://github.com/specsie/build.git"
+                }
+            ]
+        }
+    ], 
+    "constraints": [
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "json-schema": [
+        "https://raw.github.com/specsie/foundation/master/schema.json"
+    ], 
+    "inherits": [], 
+    "includes": [
+        "/src/structural/specdoc.json"
+    ], 
+    "specdoc": {
+        "spec": "https://github.com/specsie/structure.git"
+    }, 
+    "constraints": [
+        {
+            "constraint": "A qualifier MAY constrain a constraint in this specdoc.", 
+            "qualifiers": [
+                {
+                    "constraint": "A qualifier MAY NOT qualify any constraint except the one within the qualifier's immediate scope."
+                }
+            ]
+        }
+    ], 
+    "description": [
+        ""
+    ]
+}
